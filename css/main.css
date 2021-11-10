@@ -5,3 +5,37 @@ video {
   width: 100%;
   height: auto;
 }
+
+.Home page {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.mac {
+  resize: none;
+  position: absolute;
+  text-align: left;
+  top: 10%;
+  left: 20%;
+  transform: translate (-50, -50%);
+  color: white;
+  font-size: 28px;
+  font-weight: bolder;
+  font-family: "Sinhala MN";
+}
+
+.grid {
+  max-width: 100%;
+  padding: 1rem;
+}
+.grid section {
+  padding: 3rem;
+  max-width: 600px;
+}
+@media (min-width: 40em) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
