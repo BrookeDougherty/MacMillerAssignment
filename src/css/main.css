@@ -26,16 +26,28 @@ video {
 }
 
 .grid {
-  max-width: 100%;
-  padding: 1rem;
+  max-width: 130%;
+  padding: 0.5rem;
 }
 .grid section {
-  padding: 3rem;
+  padding: 0.5rem;
   max-width: 600px;
 }
 @media (min-width: 40em) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.16);
+  padding: 1rem;
+  background-color: #403efb;
+  max-width: 50%;
+}
+
+h2 {
+  width: 60%;
 }
