@@ -6,6 +6,32 @@ video {
   height: auto;
 }
 
+/* Header section */
+
+@keyframes headerFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+
+.Main-header {
+  background-color: #E8D2DF;
+  background-image: url("/photos/MacMillerHeader-2.png");
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position: right bottom;
+  animation-name: headerFadeIn;
+  animation-duration: 1s;
+  min-height: 70vh;
+}
+
+
+
+
 .Home page {
   position: relative;
   text-align: center;
@@ -13,26 +39,40 @@ video {
 }
 
 .mac {
+  padding: 1rem;
+  display: block;
   resize: none;
-  position: absolute;
   text-align: left;
-  top: 10%;
-  left: 20%;
-  transform: translate (-50, -50%);
+  /* top: 10%;
+  left: 20%; */
+  /* transform: translate (-50, -50%); */
   color: white;
   font-size: 28px;
   font-weight: bolder;
   font-family: "Sinhala MN";
 }
 
+/* Spinning Record Section */
+
+@keyframes headerFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+
 .grid {
   max-width: 130%;
-  padding: 0.5rem;
+  padding: 2.8rem;
 }
 .grid section {
   padding: 0.5rem;
   max-width: 600px;
 }
+
 @media (min-width: 40em) {
   .grid {
     display: grid;
@@ -45,10 +85,81 @@ nav {
   box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.16);
   padding: 1rem;
   background-color: #403efb;
-  max-width: 50%;
+  max-width: 100%;
 }
 
-h2 {
-  margin-left: 50%;
+.photoOne {
   width: 50%;
+  display: block;
+  opacity: 0;
+  transform: translateX(-100vw);
+  transition: 300m all;
+}
+
+.photoOne.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* Start of record section */
+
+.record-wrapper {
+  display: block;
+  width: 100%;
+}
+
+.record-wrapper img {
+  width: 50%;
+}
+/* End of record section */
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 35px;
+  left: 50px;
+  z-index: 99; /* Make sure it does not overlap */
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  font-size: 35px;
+}
+
+#myBtn:hover {
+  background-color: #d49ca1;
+}
+
+???
+  margin-left: 50rem;
+  bottom: 75rem;
+  font-family: "Sinhala MN";
+  font-weight: bold;
+  color: #403efb;
+}
+
+aside {
+  display: none;
+  background: #403efb;
+  inset: 0;
+  max-width: 40%;
+  margin-left: 45rem;
+}
+
+aside > div {
+  background: white;
+  max-width: 50%;
+  margin: 1.5rem;
+  padding: 1rem 1rem;
+  border-radius: 0;
+  font-family: "Sinhala MN";
+}
+
+aside.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
