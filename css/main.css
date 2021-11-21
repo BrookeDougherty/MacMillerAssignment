@@ -88,30 +88,11 @@ nav {
   max-width: 100%;
 }
 
-.photoOne {
-  width: 50%;
-  display: block;
-  opacity: 0;
-  transform: translateX(-100vw);
-  transition: 300m all;
-}
-
-.photoOne.active {
-  opacity: 1;
-  transform: translateX(0);
-}
 
 
 /* Start of record section */
 
-.record-wrapper {
-  display: block;
-  width: 100%;
-}
 
-.record-wrapper img {
-  width: 50%;
-}
 /* End of record section */
 
 
@@ -162,4 +143,51 @@ aside.active {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.record-text {
+color: black;
+width: 50vh;
+margin-left: 50vh;
+}
+
+.record-row {
+height: 50%;
+display: none;
+}
+
+.record-wrapper img {
+  position: absolute;
+  width: 50vh;
+
+
+}
+
+.record-wrapper {
+  position: relative;
+}
+
+@keyframes recordSlidingIn {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+.record-rolling-onScroll {
+  animation-name: recordSlidingIn;
+  animation-duration: 1s;
+}
+
+
+.record-section {
+  
+}
+
+button {
+  border: none;
+  box-shadow: none;
+ background-color: transparent;
 }
