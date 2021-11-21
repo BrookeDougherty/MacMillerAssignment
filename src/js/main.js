@@ -1,34 +1,30 @@
+const maxRotation = 365;
+
 // BACK TO TOP BUTTON
 //Get the button
 var mybutton = document.getElementById("myBtn");
 
-// // When the user scrolls down 20px from the top of the document, show the button
-// window.onscroll = function () {
-//   scrollFunction();
-// };
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     mybutton.style.display = "block";
-//   } else {
-//     mybutton.style.display = "none";
-//   }
-// }
-
-// // When the user clicks on the button, scroll to the top of the document
-// function topFunction() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }
-
-// ROTATION OF IMAGES
-
-const maxRotation = 365;
-function handleScroll() {
+// Records Coming In From The Side
+function recordSlide() {
   console.log(window.scrollY);
+  // Get Record
+  const record = document.querySelector(".record-wrapper");
+  console.log(record);
+  // Get Image Inside Record Wrapper
+  const image = record.querySelector("img");
+  // Get Image Height
+  record.style.height = image.style.height;
+  record.style.width = image.style.width;
+  // Get Scroll Position
+  // Compare Position Of Image To Scroll Position Of Page
+  // Change Position Of Image Based On Scroll Position
+  record.classList.add("record-rolling-onScroll");
+}
+
+// Records Rolling
+function recordRole() {
   // Get list of albums
   const albums = document.querySelectorAll(".album");
-  console.log(albums);
 
   // Loop through all albums and change rotation
   for (let i = 0; i < albums.length; i++) {
@@ -37,4 +33,12 @@ function handleScroll() {
   }
   // album.style = `transform: rotate(${window.scrollY}deg)`;
 }
+
+// ROTATION OF IMAGES + Calling Both Animation Functions
+function handleScroll() {
+  recordSlide();
+  recordRole();
+}
+
 window.onscroll = handleScroll;
+
