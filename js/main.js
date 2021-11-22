@@ -43,12 +43,15 @@ function handleScroll() {
 window.onscroll = handleScroll;
 
 // Wire up Record 1 Button
-// wire
 // button.addEventListener("click", toggleModal);
 // add.asideEventListener("click", toggleModal);
 //get
-const recordButton = document.querySelector(".album");
-console.log(recordButton);
+const recordButtons = document.querySelectorAll(".album");
+// for loop
+for (let i = 0; i < recordButtons.length; i++) {
+  const recordButton = recordButtons[i];
+}
+
 // Defining function for button click
 function buttonClick() {
   console.log("hello");
@@ -58,3 +61,16 @@ function buttonClick() {
 // Reveal Record 1 when I click on first button
 // wire up event listener
 recordButton.addEventListener("click", buttonClick);
+
+// Accordian Section
+// get
+const accordian = document.querySelector(".album-accordian");
+console.log(accordian);
+//define
+function accordianClick() {
+  console.log("album info");
+  const songlistPanel = document.querySelector(".songlist-panel");
+  songlistPanel.classList.toggle("visible");
+}
+// wire up = reveal accordian information when I click on accordian button
+accordian.addEventListener("click", accordianClick);
