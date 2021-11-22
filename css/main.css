@@ -17,20 +17,16 @@ video {
   }
 }
 
-
 .Main-header {
-  background-color: #E8D2DF;
+  background-color: #e8d2df;
   background-image: url("/photos/MacMillerHeader-2.png");
-  background-size:contain;
-  background-repeat:no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: right bottom;
   animation-name: headerFadeIn;
   animation-duration: 1s;
   min-height: 70vh;
 }
-
-
-
 
 .Home page {
   position: relative;
@@ -63,10 +59,9 @@ video {
   }
 }
 
-
 .grid {
   max-width: 130%;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 .grid section {
   padding: 0.2rem;
@@ -86,17 +81,11 @@ nav {
   padding: 1rem;
   background-color: #403efb;
   max-width: 100%;
-
 }
-
-
-
 
 /* Start of record section */
 
-
 /* End of record section */
-
 
 #myBtn {
   display: none;
@@ -114,14 +103,6 @@ nav {
 
 #myBtn:hover {
   background-color: #d49ca1;
-}
-
-???
-  margin-left: 50rem;
-  bottom: 75rem;
-  font-family: "Sinhala MN";
-  font-weight: bold;
-  color: #403efb;
 }
 
 aside {
@@ -148,38 +129,36 @@ aside.active {
 }
 
 .record-text {
-color: black;
-width: 50vh;
-margin-left: 80vh;
-font-size: 20px;
-font-family: "Sinhala MN";
-padding: 2rem;
+  color: black;
+  width: 50vh;
+  margin-left: 80vh;
+  font-size: 20px;
+  font-family: "Sinhala MN";
+  padding: 2rem;
 }
 
 .record-row {
-height: 100%;
-display: none;
+  height: 100%;
+  display: none;
 }
 
-.record-row.visible, .songlist-panel.visible {
+.record-row.visible,
+.songlist-panel.visible {
   display: block;
-  
 }
-
 
 .record-wrapper img {
   position: absolute;
   width: 50%;
-
 }
 
 .album:hover {
-  border: 7px #d49ca1 ;
-
+  border: 7px #d49ca1;
 }
 
-
-
+.album {
+  cursor: pointer;
+}
 
 .record-wrapper {
   position: relative;
@@ -194,20 +173,15 @@ display: none;
   }
 }
 
-.record-rolling-onScroll {
+.visible .record-wrapper {
   animation-name: recordSlidingIn;
   animation-duration: 1s;
-}
-
-
-.record-section {
-  
 }
 
 button {
   border: none;
   box-shadow: none;
- background-color: transparent;
+  background-color: transparent;
 }
 
 .songlist-panel {
@@ -218,17 +192,14 @@ button {
 }
 
 .album-accordian {
- font-size: larger;
- text-align: center;
- cursor: pointer;
- color: white;
- background-color: black;
-border-radius: 20px;
-max-width: 50%;
-
- 
+  font-size: larger;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  max-width: 50%;
 }
-
 
 .album-accordion:hover {
   background-color: #d49ca1;
