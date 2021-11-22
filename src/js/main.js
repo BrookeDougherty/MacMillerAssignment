@@ -42,3 +42,19 @@ function handleScroll() {
 
 window.onscroll = handleScroll;
 
+// Wire up Record 1 Button
+// wire
+// button.addEventListener("click", toggleModal);
+// add.asideEventListener("click", toggleModal);
+//get
+const recordButton = document.querySelector(".album");
+console.log(recordButton);
+// Defining function for button click
+function buttonClick() {
+  console.log("hello");
+  const recordRow = document.querySelector(".record-row");
+  recordRow.classList.toggle("visible");
+}
+// Reveal Record 1 when I click on first button
+// wire up event listener
+recordButton.addEventListener("click", buttonClick);

@@ -46,7 +46,7 @@ video {
   /* top: 10%;
   left: 20%; */
   /* transform: translate (-50, -50%); */
-  color: white;
+  color: black;
   font-size: 28px;
   font-weight: bolder;
   font-family: "Sinhala MN";
@@ -66,10 +66,10 @@ video {
 
 .grid {
   max-width: 130%;
-  padding: 2.8rem;
+  padding: .5rem;
 }
 .grid section {
-  padding: 0.5rem;
+  padding: 0.2rem;
   max-width: 600px;
 }
 
@@ -86,7 +86,9 @@ nav {
   padding: 1rem;
   background-color: #403efb;
   max-width: 100%;
+
 }
+
 
 
 
@@ -155,6 +157,11 @@ margin-left: 50vh;
 height: 50%;
 display: none;
 }
+
+.record-row.visible {
+  display: block;
+}
+
 
 .record-wrapper img {
   position: absolute;
