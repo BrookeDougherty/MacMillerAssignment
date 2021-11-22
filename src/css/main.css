@@ -150,22 +150,26 @@ aside.active {
 .record-text {
 color: black;
 width: 50vh;
-margin-left: 50vh;
+margin-left: 80vh;
+font-size: 20px;
+font-family: "Sinhala MN";
+padding: 2rem;
 }
 
 .record-row {
-height: 50%;
+height: 100%;
 display: none;
 }
 
-.record-row.visible {
+.record-row.visible, .songlist-panel.visible {
   display: block;
+  
 }
 
 
 .record-wrapper img {
   position: absolute;
-  width: 50vh;
+  width: 50%;
 
 
 }
@@ -197,4 +201,32 @@ button {
   border: none;
   box-shadow: none;
  background-color: transparent;
+}
+
+.songlist-panel {
+  display: none;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+.album-accordian {
+ font-size: larger;
+ text-align: center;
+ cursor: pointer;
+ color: white;
+ background-color: black;
+border-radius: 20px;
+max-width: 50%;
+
+ 
+}
+
+
+.album-accordion:hover {
+  background-color: #d49ca1;
+}
+
+.album-accordian:active {
+  background-color: #d49ca1;
 }
