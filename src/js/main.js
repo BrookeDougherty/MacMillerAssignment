@@ -52,6 +52,7 @@ for (let index = 0; index < recordButtons.length; index++) {
     console.log(index);
     const recordRow = document.querySelector(".record-row-" + (index + 1)); //record-row-1
     recordRow.classList.toggle("visible");
+    recordRow.scrollIntoView();
   }
   recordButton.addEventListener("click", buttonClick);
 }
