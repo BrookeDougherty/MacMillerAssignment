@@ -171,8 +171,15 @@ display: none;
   position: absolute;
   width: 50%;
 
+}
+
+.album:hover {
+  border: 7px #d49ca1 ;
 
 }
+
+
+
 
 .record-wrapper {
   position: relative;

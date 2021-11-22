@@ -21,7 +21,7 @@ function recordSlide() {
   record.classList.add("record-rolling-onScroll");
 }
 
-// Records Rolling
+// RECORDS ROLLING
 function recordRole() {
   // Get list of albums
   const albums = document.querySelectorAll(".album");
@@ -39,30 +39,24 @@ function handleScroll() {
   recordSlide();
   recordRole();
 }
-
 window.onscroll = handleScroll;
 
-// Wire up Record 1 Button
-// button.addEventListener("click", toggleModal);
-// add.asideEventListener("click", toggleModal);
+// WIRE UP RECORD 1 BUTTON
 //get
 const recordButtons = document.querySelectorAll(".album");
 // for loop
-for (let i = 0; i < recordButtons.length; i++) {
-  const recordButton = recordButtons[i];
+for (let index = 0; index < recordButtons.length; index++) {
+  const recordButton = recordButtons[index];
+  // Defining function for button click
+  function buttonClick() {
+    console.log(index);
+    const recordRow = document.querySelector(".record-row-" + (index + 1)); //record-row-1
+    recordRow.classList.toggle("visible");
+  }
+  recordButton.addEventListener("click", buttonClick);
 }
 
-// Defining function for button click
-function buttonClick() {
-  console.log("hello");
-  const recordRow = document.querySelector(".record-row");
-  recordRow.classList.toggle("visible");
-}
-// Reveal Record 1 when I click on first button
-// wire up event listener
-recordButton.addEventListener("click", buttonClick);
-
-// Accordian Section
+// ACCORDIAN SECTION
 // get
 const accordian = document.querySelector(".album-accordian");
 console.log(accordian);
