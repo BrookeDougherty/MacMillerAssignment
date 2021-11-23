@@ -24,7 +24,7 @@ video {
   background-repeat: no-repeat;
   background-position: right bottom;
   animation-name: headerFadeIn;
-  animation-duration: 1s;
+  animation-duration: 8s;
   min-height: 70vh;
 }
 
@@ -199,15 +199,21 @@ button {
   background-color: #d49ca1;
 }
 
+/* Desktop or larger screens */
+
 @media only screen and (min-width: 600px) {
   .grid {
-    /* max-width: 130%; */
-    /* padding: 0.1rem; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     min-width: 500px;
   }
+
+  h1 {
+    font-size: 125px;
+  }
 }
+
+/* Mobile or small screens */
 
 @media only screen and (max-width: 599px) {
   .album {
@@ -221,5 +227,34 @@ button {
     flex-wrap: nowrap;
     flex-basis: 180px;
     overflow-x: scroll;
+    overflow-y: none;
+  }
+
+  .record-wrapper {
+    display: none;
+  }
+
+  .record-text {
+    width: 100%;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  .Main-header {
+    background-image: url("/photos/MacMillerHeader-2.png");
+    background-size: 75%;
+    background-position: bottom right;
+    /* background-repeat: no-repeat;
+    background-position: right bottom;
+    animation-name: headerFadeIn;
+    animation-duration: 8s;
+    min-height: 70vh; */
+  }
+
+  .mobile-hidden {
+    display: none;
   }
 }
