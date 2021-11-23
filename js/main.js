@@ -4,23 +4,6 @@ const maxRotation = 365;
 //Get the button
 var mybutton = document.getElementById("myBtn");
 
-// Records Coming In From The Side
-function recordSlide() {
-  console.log(window.scrollY);
-  // Get Record
-  const record = document.querySelector(".record-wrapper");
-  console.log(record);
-  // Get Image Inside Record Wrapper
-  const image = record.querySelector("img");
-  // Get Image Height
-  record.style.height = image.style.height;
-  record.style.width = image.style.width;
-  // Get Scroll Position
-  // Compare Position Of Image To Scroll Position Of Page
-  // Change Position Of Image Based On Scroll Position
-  record.classList.add("record-rolling-onScroll");
-}
-
 // RECORDS ROLLING
 function recordRole() {
   // Get list of albums
@@ -31,12 +14,10 @@ function recordRole() {
     const album = albums[i];
     album.style = `transform: rotate(${window.scrollY}deg)`;
   }
-  // album.style = `transform: rotate(${window.scrollY}deg)`;
 }
 
 // ROTATION OF IMAGES + Calling Both Animation Functions
 function handleScroll() {
-  recordSlide();
   recordRole();
 }
 window.onscroll = handleScroll;
@@ -90,3 +71,17 @@ function hideRecords(indexToShow) {
     }
   }
 }
+
+// Modal Container
+function toggleModal() {
+  const modalContainer = document.querySelector(".modal-container");
+  modalContainer.classList.toggle("visible");
+}
+
+// Close Button
+const modalButtons = document.querySelectorAll(
+  ".floating-button, .close-button "
+);
+modalButtons[0].addEventListener("click", toggleModal);
+
+modalButtons[1].addEventListener("click", toggleModal);

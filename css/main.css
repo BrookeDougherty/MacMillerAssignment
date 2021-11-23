@@ -69,7 +69,7 @@ nav {
   justify-content: space-between;
   box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.16);
   padding: 1rem;
-  background-color: #403efb;
+  background-color: #f24b88;
   max-width: 100%;
 }
 
@@ -257,4 +257,50 @@ button {
   .mobile-hidden {
     display: none;
   }
+}
+
+.floating-button {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  font-size: large;
+  color: black;
+  background-color: white;
+}
+
+.sources-modal {
+  position: fixed;
+  right: 50vw;
+  bottom: 50vh;
+  transform: translate(50%, 50%);
+  background-color: black;
+  padding: 1.5rem;
+  color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 25px -24px 12px 12px rgba(0, 0, 0, 0.92);
+  box-shadow: 25px -24px 12px 12px rgba(0, 0, 0, 0.92);
+  min-width: 60%;
+  min-height: 35%;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: pink;
+  opacity: 50%;
+}
+
+.modal-container {
+  display: none;
+}
+
+.modal-container.visible {
+  display: block;
+}
+
+.close-button {
+  color: pink;
 }
