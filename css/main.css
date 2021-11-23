@@ -118,7 +118,7 @@ aside.active {
 .record-text {
   color: black;
   width: 50vh;
-  margin-left: 80vh;
+  margin-left: 50%;
   font-size: 20px;
   font-family: "Sinhala MN";
   padding: 2rem;
@@ -177,6 +177,8 @@ button {
   background-color: black;
   color: white;
   overflow: hidden;
+  max-width: 400px;
+  text-align: center;
 }
 
 .album-accordian {
@@ -185,7 +187,7 @@ button {
   cursor: pointer;
   color: white;
   background-color: black;
-  border-radius: 20px;
+  border-radius: 50px;
   max-width: 50%;
 }
 
@@ -218,6 +220,6 @@ button {
     flex-direction: row;
     flex-wrap: nowrap;
     flex-basis: 180px;
-    overflow: scroll;
+    overflow: scrollx;
   }
 }
