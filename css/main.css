@@ -59,21 +59,11 @@ video {
   }
 }
 
-.grid {
-  max-width: 130%;
-  padding: 0.5rem;
-}
-.grid section {
+/* .grid section {
   padding: 0.2rem;
   max-width: 600px;
-}
+} */
 
-@media (min-width: 40em) {
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-}
 nav {
   display: flex;
   justify-content: space-between;
@@ -87,23 +77,20 @@ nav {
 
 /* End of record section */
 
-#myBtn {
+/* #myBtn {
   display: none;
   position: fixed;
   bottom: 35px;
   left: 50px;
   z-index: 99; /* Make sure it does not overlap */
-  border: none;
+/* border: none;
   background-color: black;
   color: white;
   font-weight: bold;
   padding: 15px;
   font-size: 35px;
-}
-
-#myBtn:hover {
-  background-color: #d49ca1;
-}
+/* } */
+/* #myBtn:hover { */
 
 aside {
   display: none;
@@ -158,6 +145,7 @@ aside.active {
 
 .album {
   cursor: pointer;
+  min-width: 25px;
 }
 
 .record-wrapper {
@@ -207,4 +195,29 @@ button {
 
 .album-accordian:active {
   background-color: #d49ca1;
+}
+
+@media only screen and (min-width: 600px) {
+  .grid {
+    /* max-width: 130%; */
+    /* padding: 0.1rem; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    min-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .album {
+    max-width: 180px;
+    min-width: 180px;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: 180px;
+    overflow: scroll;
+  }
 }
