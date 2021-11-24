@@ -19,7 +19,7 @@ video {
 
 .Main-header {
   background-color: #e8d2df;
-  background-image: url("/photos/MacMillerHeader-2.png");
+  background-image: url("../photos/MacMillerHeader-2.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right bottom;
