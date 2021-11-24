@@ -264,8 +264,11 @@ button {
   right: 1rem;
   top: 1rem;
   font-size: large;
-  color: black;
-  background-color: white;
+  color: white;
+  border-radius: 1rem;
+  background-color: black;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .sources-modal {
@@ -303,4 +306,10 @@ button {
 
 .close-button {
   color: pink;
+  cursor: pointer;
+  font-size: large;
+  color: black;
+  border-radius: 1rem;
+  background-color: pink;
+  font-weight: bold;
 }
