@@ -246,7 +246,7 @@ button {
   }
 
   .Main-header {
-    background-image: url("../photos/MacMillerHeader-2.png");
+    background-image: url("./photos/MacMillerHeader-2.png");
     background-size: 75%;
     background-position: bottom right;
     /* background-repeat: no-repeat;
