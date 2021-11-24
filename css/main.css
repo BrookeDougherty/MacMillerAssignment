@@ -179,6 +179,7 @@ button {
   overflow: hidden;
   max-width: 400px;
   text-align: center;
+  text-align: center;
 }
 
 .album-accordian {
@@ -189,6 +190,7 @@ button {
   background-color: black;
   border-radius: 50px;
   max-width: 50%;
+  font-weight: bold;
 }
 
 .album-accordion:hover {
@@ -263,27 +265,14 @@ button {
   position: fixed;
   right: 1rem;
   top: 1rem;
-  font-size: large;
+  font-size: 25px;
   color: white;
   border-radius: 1rem;
   background-color: black;
   cursor: pointer;
   font-weight: bold;
-}
-
-.sources-modal {
-  position: fixed;
-  right: 50vw;
-  bottom: 50vh;
-  transform: translate(50%, 50%);
-  background-color: black;
-  padding: 1.5rem;
-  color: white;
-  border-radius: 5px;
-  -webkit-box-shadow: 25px -24px 12px 12px rgba(0, 0, 0, 0.92);
-  box-shadow: 25px -24px 12px 12px rgba(0, 0, 0, 0.92);
-  min-width: 60%;
-  min-height: 35%;
+  width: 12%;
+  height: 8%;
 }
 
 .modal-background {
@@ -312,4 +301,23 @@ button {
   border-radius: 1rem;
   background-color: pink;
   font-weight: bold;
+}
+
+h2 {
+  max-width: 600px;
+}
+
+.sources-modal {
+  position: fixed;
+  right: 50vw;
+  bottom: 50vh;
+  transform: translate(50%, 50%);
+  background-color: black;
+  padding: 1.5rem;
+  color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 25px -24px 12px 12px rgba(0, 0, 0, 0.92);
+  box-shadow: 25px -24px 12px 12px rgba(0, 0, 0, 0.92);
+  min-width: 75%;
+  min-height: 35%;
 }
