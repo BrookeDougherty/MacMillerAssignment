@@ -271,8 +271,8 @@ button {
   background-color: black;
   cursor: pointer;
   font-weight: bold;
-  width: 12%;
-  height: 8%;
+  /* width: 12%;
+  height: 8%; */
 }
 
 .modal-background {
